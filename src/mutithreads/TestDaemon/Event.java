@@ -1,4 +1,4 @@
-package test.TestDaemon;
+package mutithreads.TestDaemon;
 
 import java.util.Date;
 

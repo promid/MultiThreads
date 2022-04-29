@@ -1,4 +1,4 @@
-package test.TestThreadGroup;
+package mutithreads.TestThreadGroup;
 
 /**
  * Created by DBQ on 2016/12/23.

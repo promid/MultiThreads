@@ -1,4 +1,4 @@
-package test;
+package mutithreads;
 
 /**
  * Created by DBQ on 2016/11/25.

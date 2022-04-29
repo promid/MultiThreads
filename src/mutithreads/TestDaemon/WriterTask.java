@@ -1,4 +1,4 @@
-package test.TestDaemon;
+package mutithreads.TestDaemon;
 
 
 import java.util.Date;
@@ -17,12 +17,12 @@ public class WriterTask implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 1; i < 100; i++) {
+        for (int i = 1; i < 1000; i++) {
             Event event = new Event();
             event.setDate(new Date());
 
             event.setEvent(String.format("The thread %s has generated an event", Thread.currentThread().getId()));
-
+            System.out.println("队列大小 : " + deque.size());
             deque.addFirst(event);
             try {
                 //TimeUnit.SECONDS.sleep(1);
@@ -31,8 +31,6 @@ public class WriterTask implements Runnable {
                 e.printStackTrace();
             }
         }
-
-
     }
 }
 
